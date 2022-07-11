@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    
+  <meta charset="utf-8" />
+  <title>Graphic</title>
+  <!--[if IE]>
+   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <style>
+   article, aside, details, figcaption, figure, footer,header,
+   hgroup, menu, nav, section { display: block; }
+  </style>
+ </head>
+ <body>
+    <div>
+        <canvas id="second" width="700" height="700"></canvas>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./second_graphic.js"></script>
+  <script>
+    const second = new Chart(
+      document.getElementById('second'),
+      config
+    );
+  </script>
+ </body>
+</html>
